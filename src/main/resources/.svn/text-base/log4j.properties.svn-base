@@ -1,0 +1,27 @@
+log4j.rootLogger=INFO, FILE
+
+#log4j.logger.org.apache.velocity.appender=VELOCITY
+
+#log4j.appender.FILE=org.apache.log4j.FileAppender
+#log4j.appender.FILE.File=${package.basedir}/log/felix.log
+#log4j.appender.FILE.layout=org.apache.log4j.PatternLayout
+#log4j.appender.FILE.layout.ConversionPattern=%-4r [%t] %-5p %c %x - %m%n%M\n
+
+log4j.appender.FILE=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.FILE.DatePattern='.'yyyy-MM-dd
+log4j.appender.FILE.File=${package.basedir}/log/felix.log
+log4j.appender.FILE.layout=org.apache.log4j.PatternLayout
+log4j.appender.FILE.layout.ConversionPattern=%d{ISO8601} %-5p [%t]: %m%n
+log4j.logger.com.scrippsnetworks.mobile.api.datasource=debug
+#log4j.logger.com.scrippsnetworks.mobile.api.service=debug
+#log4j.logger.com.scrippsnetworks.mobile.api.service.foodcom=debug
+log4j.logger.com.scrippsnetworks.mobile.api.endpoint.foodcom.edfh=debug
+log4j.logger.com.scrippsnetworks.mobile.api.util=debug
+
+#log4j.appender.VELOCITY=org.apache.log4j.DailyRollingFileAppender
+#log4j.appender.VELOCITY.DatePattern='.'yyyy-MM-dd
+#log4j.appender.VELOCITY.File=${package.basedir}/log/velocity.log
+#log4j.appender.VELOCITY.Append=true
+#log4j.appender.VELOCITY.Encoding=UTF-8
+#log4j.appender.VELOCITY.layout=org.apache.log4j.PatternLayout
+#log4j.appender.VELOCITY.layout.ConversionPattern=%d{ISO8601} %-5p [%t]: %m%n

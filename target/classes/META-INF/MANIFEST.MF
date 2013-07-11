@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Fragment-Host: org.springframework.osgi.log4j.osgi
+Built-By: 904752
+Build-Jdk: 1.6.0_45
+Bundle-Version: 1.0.0
+Tool: Bnd-1.15.0
+Bundle-Name: fragment-logging-config
+Bnd-LastModified: 1373476753505
+Created-By: Apache Maven Bundle Plugin
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: com.scrippsnetworks.mobile.api.logging.fragment-L
+ oggingConfig
+
